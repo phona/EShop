@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>eshop-用户注册</title>
+	<script type="text/javascript" src=".\js\jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src=".\js\bootstrap.min.js"></script>
+	<script type="text/javascript" src=".\js\logging.js"></script>
+	<link rel="stylesheet" type="text/css" href=".\css\bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href=".\css\base.css">
+	<link rel="stylesheet" type="text/css" href=".\css\logging.css">
+</head>
+<body>
+	<div class="navbar navbar-default">
+		<div class="container">
+			<div class="header">
+				<div class="navbar-brand">
+					<img src=".\images\logo.PNG" alt="">
+				</div>
+			</div>
+
+			<ul class="nav navbar-nav">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">商品</a></li>
+				<li><a href="#">我的购物车</a></li>
+				<li><a href="#">关于我们</a></li>
+			</ul>
+
+			<form action="" class="navbar-form navbar-right">
+				<div class="form-group">
+					<div class="input-group">
+						<input type="text" name="" placeholder="热销中" class="form-control">
+						<span class="input-group-btn">
+							<button class="btn btn-default">
+								<span class="glyphicon glyphicon-search"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div class="container logging-input">
+		<div class="row">
+			<div class="col-lg-4">
+				<blockquote>
+					<p>勇者愤怒,抽刃向更强者;怯者愤怒,却抽刃向更弱者。</p>
+					<footer>鲁迅</footer>
+				</blockquote>
+			</div>
+			<div class="col-lg-4 col-lg-offset-3" style="background-color:rgba(248, 248, 248, 0.7)">
+				<div class="page-header logging-header">
+					用户登录
+					<div class="logging">
+						<a href="#">注册</a>
+						<span class="glyphicon glyphicon glyphicon-menu-right"></span>
+					</div>
+				</div>
+				
+				<div class="reg_form">
+					<form action="" class="form-horizontal">
+						<div class="form-group">
+							<lable class="col-lg-3 control-label">用户名:</lable>
+							<div class="col-lg-9">
+								<input type="text" class="form-control" id="user_name" name="user_name">
+								<span class="error_tip">提示信息</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<lable class="col-lg-3 control-label">密码:</lable>
+							<div class="col-lg-9">
+								<input type="password" class="form-control" id="pwd" name="pwd">
+								<span class="error_tip">提示信息</span>
+							</div>
+						</div>
+						<div class="form-group"">
+							<div class="checkbox col-lg-offset-3 col-lg-4">
+								<label>
+									<input type="checkbox" checked="checked" name="allow" id="allow">记住我
+								</label>
+							</div>
+							<div class="col-lg-offset-9 forget">
+								<a href="">忘记密码</a>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-lg-offset-2 col-lg-8">
+								<input type="submit" class="btn btn-primary btn-block" value="提交">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid footer">
+		<div class="row">
+			<div class="col-lg-3"></div>
+			<div class="col-lg-1"><a href="#">公司简介</a></div>
+			<div class="col-lg-1"><a href="#">诚聘英才</a></div>
+			<div class="col-lg-1"><a href="#">网站联盟</a></div>
+			<div class="col-lg-1"><a href="#">Eshop招商</a></div>
+			<div class="col-lg-1"><a href="#">机构销售</a></div>
+			<div class="col-lg-1"><a href="#">官方Blog</a></div>
+			<div class="col-lg-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-lg-offset-3">
+				<span>Copyright (C) Eshop 2004-2017, All Rights Reserved</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

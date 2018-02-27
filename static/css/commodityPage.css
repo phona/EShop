@@ -1,0 +1,32 @@
+select {
+  border: solid 1px #000;
+
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+
+  background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+
+
+  padding-right: 14px;
+}
+
+
+select::-ms-expand { display: none; }
+
+.page-header-title{
+
+}
+
+.page-header-self{
+	border:none;
+	margin: 30px auto;
+}
+
+.option{
+	margin:23px auto;
+}
+
+.btn-self{
+	width: 150px;
+}

@@ -1,0 +1,13 @@
+.table-self thead tr th{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.table-self tbody tr td{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.item-pic{
+	text-align: left !important;
+}

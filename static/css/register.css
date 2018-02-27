@@ -1,0 +1,25 @@
+.register-header{
+	font: bold 25px/30px 'Microsoft YaHei';
+	color: rgb(126, 124, 124);
+}
+
+.register-header .register-logging{
+	float: right;
+	color: rgb(240, 119, 0);
+	font: bold 15px/20px 'Microsoft YaHei';
+}
+
+.register-input{
+	padding-top: 5%;
+}
+
+.error_tip{
+	display: none;
+	font: 15px/0px 'Microsoft YaHei';
+	color: red;
+	padding-top: 2px;
+}
+
+.change{
+	padding-bottom: 30px;
+}

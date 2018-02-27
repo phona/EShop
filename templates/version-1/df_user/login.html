@@ -1,0 +1,61 @@
+{%extends 'base.html'%}
+
+{%block head%}
+	<script type="text/javascript" src="/static/js/logging.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/css/logging.css">
+{%endblock head%}
+
+{%block body%}
+	<div class="container logging-input">
+		<div class="row">
+			<div class="col-lg-4">
+				<blockquote>
+					<p>勇者愤怒,抽刃向更强者;怯者愤怒,却抽刃向更弱者。</p>
+					<footer>鲁迅</footer>
+				</blockquote>
+			</div>
+			<div class="col-lg-4 col-lg-offset-3" style="background-color:rgba(248, 248, 248, 0.7)">
+				<div class="page-header logging-header">
+					用户登录
+					<div class="logging">
+						<a href="{%url 'user:register'%}">注册</a>
+						<span class="glyphicon glyphicon glyphicon-menu-right"></span>
+					</div>
+				</div>
+				
+				<form action="#" class="form-horizontal">
+					<div class="form-group">
+						<lable class="col-lg-3 control-label">用户名:</lable>
+						<div class="col-lg-9">
+							<input type="text" class="form-control" id="username" name="username">
+							<span class="error_tip">提示信息</span>
+						</div>
+					</div>
+					<div class="form-group">
+						<lable class="col-lg-3 control-label">密码:</lable>
+						<div class="col-lg-9">
+							<input type="password" class="form-control" id="pwd" name="pwd">
+							<span class="error_tip">提示信息</span>
+						</div>
+					</div>
+					<div class="form-group"">
+						<div class="checkbox col-lg-offset-3 col-lg-4">
+							<label>
+								<input type="checkbox" checked="checked" name="allow" id="allow">记住我
+							</label>
+						</div>
+						<div class="col-lg-offset-9 forget">
+							<a href="">忘记密码</a>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-lg-offset-2 col-lg-8">
+							<input type="submit" class="btn btn-primary btn-block" value="提交">
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+{%endblock body%}

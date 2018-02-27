@@ -1,0 +1,251 @@
+{%extends 'base.html'%}
+
+{% block head %}
+<script type="text/javascript" src="/static/js/list.js"></script>
+{% endblock head %}
+
+{%block body%}
+	<div class="container">
+		<div class="row">
+			<h3 style="border-bottom:2px solid black;">
+				{{ title }}
+			</h2>
+		</div>
+	</div>
+	<div id='items'>
+		<div class="container items">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="thumbnail">
+						<a href="">
+							<img src="" alt="">
+							<span class="caption">
+							<p class="text-center">
+
+							</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="thumbnail">
+						<a href="">
+							<img src="" alt="">
+							<span class="caption">
+							<p class="text-center">
+
+							</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="thumbnail">
+						<a href="">
+							<img src="" alt="">
+							<span class="caption">
+							<p class="text-center">
+
+							</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="thumbnail">
+						<a href="">
+							<img src="" alt="">
+							<span class="caption">
+							<p class="text-center">
+
+							</p>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container items">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="thumbnail">
+						<a href="">
+							<img src="" alt="">
+							<span class="caption">
+							<p class="text-center">
+
+							</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="thumbnail">
+						<a href="">
+							<img src="" alt="">
+							<span class="caption">
+							<p class="text-center">
+
+							</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="thumbnail">
+						<a href="">
+							<img src="" alt="">
+							<span class="caption">
+							<p class="text-center">
+
+							</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="thumbnail">
+						<a href="">
+							<img src="" alt="">
+							<span class="caption">
+							<p class="text-center">
+
+							</p>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container items">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="thumbnail">
+						<a href="">
+							<img src="" alt="">
+							<span class="caption">
+							<p class="text-center">
+
+							</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="thumbnail">
+						<a href="">
+							<img src="" alt="">
+							<span class="caption">
+							<p class="text-center">
+
+							</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="thumbnail">
+						<a href="">
+							<img src="" alt="">
+							<span class="caption">
+							<p class="text-center">
+
+							</p>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="thumbnail">
+						<a href="">
+							<img src="" alt="">
+							<span class="caption">
+							<p class="text-center">
+
+							</p>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row text-right">
+				<ul class="pagination" id="paginator">
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<h2 style="border-bottom: 2px solid black;">
+				推荐
+			</h2>
+		</div>
+	</div>
+
+	{% if result != '' %}
+	<div class="container recommend">
+		<div class="row">
+
+			{%for i in result %}
+			<div class="col-lg-3">
+				<div class="thumbnail">
+					<a href="{{i.url}}">
+						<img src="{{i.val.gpic}}" alt="">
+						<span class="caption">
+							<p>
+								{{i.val.gtitle}}
+							</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			{% endfor %}
+
+			<!-- <div class="col-lg-3">
+				<div class="thumbnail">
+					<a href="">
+						<img src="" alt="">
+						<span class="caption">
+							<p>
+
+							</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="thumbnail">
+					<a href="">
+						<img src="" alt="">
+						<span class="caption">
+							<p>
+
+							</p>
+						</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<div class="thumbnail">
+					<a href="">
+						<img src="" alt="">
+						<span class="caption">
+							<p>
+
+							</p>
+						</span>
+					</a>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	{% endif %}
+
+{%endblock body%}

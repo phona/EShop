@@ -1,0 +1,26 @@
+.logging-header{
+	font: bold 25px/30px 'Microsoft YaHei';
+	color: rgb(126, 124, 124);
+}
+
+.logging-header .logging{
+	float: right;
+	color: rgb(240, 119, 0);
+	font: bold 15px/30px 'Microsoft YaHei';
+}
+
+.logging-input{
+	padding-top: 5%;
+}
+
+.error_tip{
+	display: none;
+	font: 15px/0px 'Microsoft YaHei';
+	color: red;
+	padding-top: 2px;
+}
+
+.forget{
+	padding-top: 7px; 
+	padding-bottom: 20px;
+}

@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block head %}
+	<link rel="stylesheet" type="text/css" href="/static/css/cart.css">
+	<script type="text/javascript" src="/static/js/cart.js"></script>
+{% endblock head %}
+
+{% block body %}
+	<div class="container">
+		<div class="row">
+			<table class="table table-self">
+				<thead>
+					<tr>
+						<th>商品名称</th>
+						<th>商品价格</th>
+						<th>数量	</th>
+						<th>小计</th>
+						<th>操作</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					{%for cart in carts%}
+					<tr class="item" id="{{cart.id}}">
+						<td class="item-pic">
+							<input type="checkbox" name="item">
+							<img src="{{cart.goods.gpic}}">
+							<span>{{cart.goods.gtitle}}</span>
+						</td>
+						<td class="price">
+							{{cart.goods.gprice}}
+						</td>
+						<td>
+							<div class="input-group">
+								<span class="input-group-btn">
+									<button class="btn btn-default" id="plus">+</button>
+								</span>
+								<input type="text" class="form-control count" id="good_nums" value="{{cart.count}}">
+								<span class="input-group-btn">
+									<button class="btn btn-default" id="minus">-</button>
+								</span>
+							</div>
+						</td>
+						<td class="total">
+							
+						</td>
+						<td>
+							<a href="javascript:;" class="delete">删除</a>
+						</td>
+					</tr>
+					{%endfor%}
+				</tbody>
+			</table>
+			<div class="container">
+				<div class="row text-right">
+					<div class="col-lg-2 col-lg-offset-10">
+						合计：￥<em id="aggregate"></em>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row text-right">
+					<div class="col-xs-2 col-lg-offset-10">
+						<input type="button" class="btn btn-primary form-control" value="结账">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock body %}

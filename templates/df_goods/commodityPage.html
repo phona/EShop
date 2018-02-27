@@ -1,0 +1,78 @@
+{%extends 'base.html'%}
+
+{%block head%}
+	<script type="text/javascript" src="/static/js/commodity.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/css/commodityPage.css">
+{%endblock head%}
+
+{%block body%}
+<div class="container">
+	<div class="row">
+		<h3 class="page-header">
+			{{title}}
+		</h3>
+		<span hidden="hidden" id="good_id">{{good_id}}</span>
+	</div>
+</div>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4">
+			<img src="{{src}}" alt="" class="img-rounded">
+		</div>
+		<div class="col-lg-4 col-lg-offset-3" style="background-color:rgba(248, 248, 248, 0.7)">
+
+			<div class="row page-header page-header-self">
+				特惠价：￥<strong>{{price}}</strong>
+			</div>
+
+			<div class="row option" id="chooseSize">
+				尺码：
+				<button class="btn btn-default">S</button>
+				<button class="btn btn-default">M</button>
+				<button class="btn btn-default">L</button>
+				<button class="btn btn-default">XL</button>
+				<button class="btn btn-default">XXL</button>
+			</div>
+
+			<div class="row option">
+				<div class="form-inline">
+					数量：
+					<select name="" id="goodsNum">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+					</select>
+					或
+					<div class="input-group">
+						<input type="text" class="form-control" placeholder="请输入需要的个数" id="goodsText">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button">确定</button>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="row option">
+				已选：<strong id="size"> </strong>，<strong id="num"> </strong>，<strong style="color:red;" id="result">现在有货</strong>
+			</div>
+
+			<div class="row option">
+				<div class="input-group col-lg-offset-1">
+					<div class="btn-group btn-group-self">
+						<a href='#' role="button" class="btn btn-default btn-self">立即购买</a>
+						<a href='javascript:;' role="button" class="btn btn-default btn-self" id="put_in_cart">加入购物车</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+{%endblock body%}
